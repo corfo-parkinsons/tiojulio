@@ -61,7 +61,7 @@ def soapit(text, role = None, completion_model = COMPLETION_MODEL):
     if role is not None:
         PROMPT = 'Resume el texto como si fueras un {role}'
     else:
-        PROMPT = 'Dame el resumen de lo que ocurre en este diálogo entre un doctor y su paciente'
+        PROMPT = 'Dame el resumen de lo que ocurre en esta entrevista'
     prompt_y_texto = f"{PROMPT}\n\n{text}"
     
     client = openai.OpenAI()
@@ -69,7 +69,7 @@ def soapit(text, role = None, completion_model = COMPLETION_MODEL):
         response = client.chat.completions.create(
           model=completion_model,
           messages = [{'role': 'user',
-                       'content': f"resume este texto en formato médico SOAP, agregando dos posibles diagnósticos y exámenes sugeridos:\n\n{text}"}
+                       'content': f"describe el tono de este intercambio entre un apoderado y el profesor de su hijo:\n\n{text}"}
                      ],
           #prompt = prompt_y_texto,
           temperature=1, max_tokens=MAX_TOKENS,
