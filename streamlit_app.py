@@ -10,7 +10,7 @@ fuente = 'CETRAM'
 
 #with tab1:
 if True:
-    st.title('👨‍⚕️Julio: Grabadora Reuniones San Juan🤖')
+    st.title('👨‍⚕️Julio: Reuniones San Juan🤖')
     simple_recorder(fuente)
 
 #with tab2:
