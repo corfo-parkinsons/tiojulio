@@ -1,6 +1,6 @@
 boto3
 langchain
-openai==0.28.1
+openai
 snowflake-snowpark-python
 streamlit
 streamlit-audiorecorder
