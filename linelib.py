@@ -71,7 +71,7 @@ def simple_recorder(fuente):
     if fuente == 'CETRAM':
         msg_in = "Presione para grabar"
         msg_out = "Grabando... presione para terminar"
-        SUMMARY = 'resumen SOAP:'
+        SUMMARY = 'resumen académico:'
         TRANS = 'TRANSCRIPCION AUDIO:'
     else:
         msg_in = "Press to record"
